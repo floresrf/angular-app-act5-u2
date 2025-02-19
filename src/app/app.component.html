@@ -1,4 +1,18 @@
+<!--
 <div class="container">
     <h1 class="text-center">{{ title }}</h1>
 </div>
 <app-tarjeta-producto></app-tarjeta-producto>
+-->
+
+<section>
+    <div class="container">
+        <h1 class="text-center text-warning">{{title}}</h1>
+        <p>Bienvenido, {{usuario.firstName}} {{usuario.lastName}} tienes {{usuario.age}} años.</p>
+        <p>Aqui una breve descripcion:</p>
+        <p>"{{usuario.description}}"</p>
+        <p>{{saludar()}}</p>
+        <p>en 3 meses tendras {{usuario.age + 1}} años.</p>
+    </div>
+
+</section>

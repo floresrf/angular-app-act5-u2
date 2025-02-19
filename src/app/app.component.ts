@@ -9,5 +9,15 @@ import { TarjetaProductoComponent } from "./tarjeta-producto/tarjeta-producto.co
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'app-act5';
+  title = 'Orgullo UTS';
+  usuario = {
+    firstName: 'Rene',
+    lastName: 'Flores',
+    description: 'Soy un estudiante de la carrera TIC en Desarrollo de Software multiplataforma.',
+    age: 19
+  };
+
+  saludar(){
+    return `Hola, ${this.usuario.firstName}`;
+  }
 }
